@@ -16,7 +16,6 @@ body{
     background: linear-gradient(rgb(62, 17, 114) , #470000);
     overflow-y: hidden;
 }
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -28,7 +27,6 @@ nav ul{
     list-style: none;
     display: flex;
 }
-
 nav ul li{
     padding: 0 10px;
     font-size: 15px;
@@ -42,18 +40,28 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
-
 section{
-    display: flex;
     position: relative;
     min-height: 100vh;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
 }
-
 .secao_texto {
     color: white;
     width: 55%;
     align-items: start;
+}
+.secao_texto02{
+    position: relative;
+    align-items: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+    color: white;
 }
 .secao_texto h1{
     font-size: 5rem;
@@ -68,65 +76,15 @@ section{
     -2px 2px purple;
 
 }
-.secao_texto p{
-font-size: 17px;
-margin: 30px 0;
-font-weight: 400;
-text-align: left;
-}
-.secao_texto div{
-    text-align: left;
-}
-
-.secao_texto div button{
-    font-size: 22px;
-    color: white;
-    border: none;
-    background-color: transparent;
-    margin-right: 30px;
-    font-weight: 300;
-}
-.secao_texto div button i{
-    font-size: 38px;
-    margin-right: 10px;
-}
-.secao_texto div button:first-child{
-    display: inline-flex;
-    align-items: center;
-}
-.secao_texto div button:last-child{
-    border: 1px solid white;
-    border-radius: 50px;
-    padding: 20px;
-}
-.secao_img{
-    position: absolute;
-    right: -50px;
-    bottom: -40px;
-    width: 500px;
-}
-.secao_img img{
-    width: 800px;
-}
-.link{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-@media (max-width: 520px){
-    section{
-        width: 90%;
-        padding: 30px;
-    }
-    section img{
-        width: 100%;
-    
-    }
-header nav ul{
-    font-size: 1.3rem;
-    color: black;
-}
-section {
-    gap: 15px;
+.secao_texto02 h1{
+    font-size: 5rem;
+    margin-top: 0px auto;
+    text-shadow: 3px 0 purple,
+    -3px 0 purple,
+    0 3px purple,
+    0 -3px red,
+    2px 2px red,
+    -2px -2px purple,
+    2px -2px red,
+    -2px 2px purple;
 }
