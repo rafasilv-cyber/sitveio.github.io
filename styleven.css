@@ -95,8 +95,8 @@ header {
   .product-info button {
     padding: 10px 20px;
     background-color: var(--cor-botao);
-    color: white;
-    border: none;
+    color: black;
+    border: gray;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
